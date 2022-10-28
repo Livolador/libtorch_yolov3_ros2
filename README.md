@@ -1,4 +1,4 @@
-# libtorch_yolov3_ros
+# libtorch_yolov3_ros2
 
 YOLO的全称是you only look once，指只需要浏览一次就可以识别出图中的物体的类别和位置，这是Redmon等人在2016年的一篇研究论文中命名的。YOLO实现了自动驾驶汽车等前沿技术中使用的实时对象检测。本项目是通过libtorch实现yolov3，并使用ros2-foxy框架下发布话题。
 ![Image text](/image/yolo.png)
