@@ -1,0 +1,60 @@
+#yolov3参数配置文件
+##为注释，=前后最好不要加空格
+##所有文件的路径设置为绝对路径
+
+#网络配置文件
+cfgPath=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/models/yolov3.cfg
+#网络权重文件
+weightsPath=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/models/yolov3.weights
+namePath=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/models/cocoName.txt
+#rgb和depth时间戳对准图像目录，TUM RGBD数据集
+imagesPath=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/data/rgbd_dataset_freiburg3_long_office_household/associate.txt
+datasetPath=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/data/rgbd_dataset_freiburg3_long_office_household/
+
+#标志位 是否从话题中读取图像文件,1是从话题读取,0是从文件路径读取
+topicOrFile=0
+#是否发布图像点云，1是发布，0是不发布
+publishPointCloud=0
+#是否发布2D检测后的图像话题
+publishImageBox=1
+#是否存储检测结果
+saveImageBox=0
+#存储路径
+savePath=/home/l/image
+#话题
+#接收rgb话题
+rgbTopic=/camera/image_raw
+#接收depth话题
+depthTopic=/camera/depth
+#发布marker话题
+markerTopic=/yolo/marker
+#发布点云话题
+pointCloudTopic=/yolo/point_cloud
+#发布检测之后的图像话题
+imageBoxTopic=/yolo/image_box
+# 相机内参
+# fr1
+#camera.cx=318.6
+#camera.cy=255.3
+#camera.fx=517.3
+#camera.fy=516.5
+
+# fr2
+#camera.cx=325.1
+#camera.cy=249.7
+#camera.fx=520.9
+#camera.fy=521.0
+
+# fr3
+camera.cx=320.1
+camera.cy=247.6
+camera.fx=535.4
+camera.fy=539.2
+
+camera.d0=0.2312
+camera.d1=-0.7849
+camera.d2=-0.0033
+camera.d3=-0.0001
+camera.d4=0.9172
+
+camera.scale=5000.0
