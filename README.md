@@ -25,5 +25,9 @@ source setup.sh
 ros2 run yolov3_ros2 detectnode --ros-args -p parameterPath:=/home/l/ros2/yolov3-ros2/yolov3-1.0.0/workspace/src/yolov3_ros2/config/parameters.txt
 #记得修改成自己的parameters.txt参数文件的路径
 ```
+## TODO
+1、可以使用参数文件选择话题或者本地文件
+2、发布目标点云
+
 ## 借鉴项目
 [libtorch-yolov3](https://github.com/walktree/libtorch-yolov3)
